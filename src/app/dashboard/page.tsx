@@ -52,7 +52,7 @@ export default function Dashboard() {
 
             const intervalId = setInterval(() => {
                 fetchConsumoEnergia();
-            }, 5000);
+            }, 10000);
     
             return () => {
                 clearInterval(intervalId); 

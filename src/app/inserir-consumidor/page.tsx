@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import logo from '../../../public/assets/images/stable-icon.png';
 
 export default function CadastroConsumidor() {
     const [nomeConsumidor, setNomeConsumidor] = useState("");
@@ -75,6 +76,7 @@ export default function CadastroConsumidor() {
 
     return (
         <section className='container formContainer'>
+            <Link href='/dashboard'><Image src={logo} alt="Logo" className='logoForm'/></Link>
             <h3 className="titleForm">Cadastrar Consumidor</h3>
             <p className="subtitleForm">Por favor, insira os dados do consumidor</p>
             

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { LateralNav } from "@/components/lateralNav/LateralNav";
-
 export default function UsoEnergiaRegiao() {
 
     const [energiaTotal, setEnergiaTotal] = useState<number | null>(null);
@@ -70,7 +69,7 @@ export default function UsoEnergiaRegiao() {
            <div className="w-full justify-center">
             <section className="container">
                 <h3 className="text-3xl">Uso total de energia da região {regiao}:</h3>
-                <p className="text-corP1 text-9xl">{energiaTotal ? energiaTotal : "Carregando dados..."}</p>
+                <p className="text-corP1 text-5xl">{energiaTotal }</p>
             </section>
             </div>
         </div>

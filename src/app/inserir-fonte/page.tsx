@@ -68,7 +68,7 @@ export default function CadastroFonte() {
     return (
         <>
             <section className='container formContainer'>
-                <Link href='/'><Image src={logo} alt="Logo" className='logoForm'/></Link>
+                <Link href='/dashboard'><Image src={logo} alt="Logo" className='logoForm'/></Link>
                 <h3 className={`${inter.className} titleForm`}>Inserir fonte</h3>
                 <p className={`${inter.className} subtitleForm`}>Por favor, insira a fonte desejada</p>
               

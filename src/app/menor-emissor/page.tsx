@@ -1,3 +1,5 @@
+"use client";
+import { LateralNav } from "@/components/lateralNav/LateralNav";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -50,21 +52,29 @@ export default function MenorEmissor() {
     }, [login]);
 
     return (
-        <section className="container">
-            <h3 className="text-corP1 text-2xl">Menor Emissor da Região {regiao}:</h3>
+        <div className="flex">
+
+        <LateralNav />
+        
+        <div className="w-full justify-center">
+         <section className="container">
+            <h3 className="text-corP5 text-4xl">Menor Emissor da Região {regiao}:</h3>
             {consumidor ? (
                 <div>
-                    <p className="text-corP1"><strong>Nome:</strong> {consumidor.nomeConsumidor}</p>
-                    <p className="text-corP1"><strong>Nível de Consumo:</strong> {consumidor.nivelConsumo} kWh</p>
-                    <p className="text-corP1"><strong>Prioridade:</strong> {consumidor.prioridade}</p>
-                    <p className="text-corP1"><strong>Região:</strong> {consumidor.regiao}</p>
-                    <p className="text-corP1"><strong>Status:</strong> {consumidor.status}</p>
-                    <p className="text-corP1"><strong>Emissão de Carbono:</strong> {consumidor.emissaoCarbono} kg</p>
-                    <p> className="text-corP1"<strong>Fonte de Energia:</strong> {consumidor.energia}</p>
+                    <p className="text-2xl"><strong>Nome:</strong> {consumidor.nomeConsumidor}</p>
+                    <p className="text-2xl"><strong>Nível de Consumo:</strong> {consumidor.nivelConsumo} kWh</p>
+                    <p className="text-2xl"><strong>Prioridade:</strong> {consumidor.prioridade}</p>
+                    <p className="text-2xl"><strong>Região:</strong> {consumidor.regiao}</p>
+                    <p className="text-2xl"><strong>Status:</strong> {consumidor.status}</p>
+                    <p className="text-2xl"><strong>Emissão de Carbono:</strong> {consumidor.emissaoCarbono} kg</p>
+                    <p className="text-2xl"><strong>Fonte de Energia:</strong> {consumidor.energia}</p>
                 </div>
             ) : (
                 <p>Carregando dados...</p>
             )}
         </section>
+         </div>
+     </div>
+      
     );
 }
