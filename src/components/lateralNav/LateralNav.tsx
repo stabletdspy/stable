@@ -9,6 +9,7 @@ import sairIcon from '../../../public/assets/svg/sairIcon.svg';
 import deleteFont from '../../../public/assets/images/remover.png';
 import menorConsu from '../../../public/assets/images/energia-sustentavel.png';
 import somaEner from '../../../public/assets/images/raio.png';
+import Link from 'next/link';
 export const LateralNav = () => {
     const router = useRouter();
 
@@ -21,7 +22,7 @@ export const LateralNav = () => {
         <>
             <div className='max-w-max'>
                 <nav className='flex flex-col items-center h-screen justify-between py-[50px] border-r-1 border-solid border-[#E9E9E9]'>
-                   <Image src={logo} alt="Logo AutoCare" className='w-[190px]'/>
+                  <Link href="/"><Image src={logo} alt="Logo AutoCare" className='w-[190px]'/></Link> 
                    <button className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={addFonte} alt='Adicionar fonte' className='w-[40px] filter invert'/></button>
                    <button className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={addConsu} alt='Adicionar consumidor'className='w-[40px] filter invert'/></button>
                    <button className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={somaEner} alt='Adicionar fonte'className='w-[40px] filter invert'/></button>
