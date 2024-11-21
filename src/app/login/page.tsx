@@ -29,7 +29,7 @@ export default function Login() {
 
             if (response.data) {
                 sessionStorage.setItem('clienteLogin', login);
-                router.push('/dashboard');
+                router.push(`/dashboard?clienteLogin=${login}`);
             } else {
                 alert("Login ou senha incorretos!");
             }
