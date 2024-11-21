@@ -17,7 +17,7 @@ export default function Integrantes() {
       <>
         <Header/>
         <section className="container">
-            <h1 className={`${inter.className} text-5xl sm:text-6xl font-semibold mb-8 text-center`}>Equipe <span className="text-corP1">Auto</span>Care</h1>
+            <h1 className={`${inter.className} text-5xl sm:text-6xl font-semibold mb-8 text-center`}>Equipe <span className="text-corP1">STABLE</span></h1>
             <ul className="my-20 grid grid-cols-1 md:grid-cols-3 gap-10 px-5">
                 <li>
                     <CardIntegrante
