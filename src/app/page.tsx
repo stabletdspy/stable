@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import { Header } from '@/components/header/Header';
 
-import logoHeader from '../../public/assets/images/stable-icon.png';
 import Consumidores from '../../public/assets/images/consumidores.png';
 import Balanca from '../../public/assets/images/balancas.png';
 import Energia from '../../public/assets/images//sustainable-energy.png';
@@ -30,7 +29,7 @@ export default function PageHome() {
         <div className="order-1 md:order-2">
         <div
           className="imagem_main w-full h-[350px] sm:h-[477px] md:h-[554px] bg-center bg-cover rounded-tl-[140px] rounded-tr-[20px] rounded-br-[140px] rounded-bl-[20px]"
-          style={{ backgroundImage: `url("../../assets/images/banner-main.jpg")` }}
+          style={{ backgroundImage: `url("../../assets/images/imagem-main.png")` }}
           />
         </div>
       </main>
