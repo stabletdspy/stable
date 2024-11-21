@@ -67,7 +67,7 @@ export default function Cadastro() {
                    
                   
 
-                <Link href="/"><Image src={logoHeader} alt="" className='logoForm' /></Link>
+                <Link href="/"><Image src={logoHeader} alt="logo" className='logoForm' /></Link>
                 <h3 className={`${inter.className} titleForm`}>Cadastro</h3>
                 <p className={`${inter.className} subtitleForm`}>Complete com seus dados para criar sua conta</p>
 

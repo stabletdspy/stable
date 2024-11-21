@@ -13,7 +13,7 @@ export const Footer = () => {
     return (
         <footer className="bg-preto">
             <div className='pt-[60px] pb-10 grid grid-cols-1 gap-[60px] md:grid-cols-custom md:gap-10 max-w-screen-2xl mx-auto px-5'>
-                <Link href="/"><Image src={logoFooter} alt="Logo Innova AutoCare"/></Link>
+                <Link href="/"><Image src={logoFooter} alt="Logo"/></Link>
                 <div>
                     <h3 className={`${inter.className} text-branco text-2xl font-medium mb-8`}>Contato</h3>
                     <ul className="mb-8">
