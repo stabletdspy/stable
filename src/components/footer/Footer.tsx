@@ -25,7 +25,7 @@ export const Footer = () => {
                         <hr className="border-[#121212] max-w-[360px]"/>
                     </ul>
                     <div>
-                        <a href="https://github.com/InnovaAutoCare/autocare-sprint4" target="_blank"><Image src={githubIcon} alt="Icone GitHub"/></a>
+                        <a href="https://github.com/stabletdspy/stable" target="_blank"><Image src={githubIcon} alt="Icone GitHub"/></a>
                     </div>
                 </div>
                 <div className=''>
