@@ -50,7 +50,7 @@ export default function Cadastro() {
             if (response.status === 201) {
                 sessionStorage.setItem('clienteLogin', login);
                 alert("Cadastro realizado com sucesso!");
-                router.push(`/?clienteLogin=${login}`); 
+                router.push(`/dashboard?clienteLogin=${login}`); 
             }
             if (response.status === 400){
                 alert("Erro ao buscar login do cliente")
@@ -71,7 +71,7 @@ export default function Cadastro() {
                 <h3 className={`${inter.className} titleForm`}>Cadastro</h3>
                 <p className={`${inter.className} subtitleForm`}>Complete com seus dados para criar sua conta</p>
 
-                <form action="">
+                <form onSubmit={handleCadastro}>
                     <div className='mb-5'>
                         <label htmlFor="" className={`${inter.className} labelForm`}>Nome Empresa</label>
                         <input type="text" placeholder="Eletropaulo" className="inputsForm" value={nome} onChange={(e) => setNome(e.target.value)}/>

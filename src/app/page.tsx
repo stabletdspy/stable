@@ -8,6 +8,7 @@ import Energia from '../../public/assets/images//sustainable-energy.png';
 import { Inter, Roboto } from "next/font/google";
 import { Footer } from '@/components/footer/Footer';
 import { CardServico } from '@/components/CardServico/CardServico';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
@@ -24,7 +25,7 @@ export default function PageHome() {
           <p className="text mb-5">
            Crie aqui sua conta para gerenciar suas fontes de energia
           </p>
-          <a className="botao">FAZER LOGIN</a>
+          <Link className="botao" href="/login">FAZER LOGIN</Link>
         </div>
         <div className="order-1 md:order-2">
         <div
