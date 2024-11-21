@@ -12,7 +12,7 @@ import logo from '../../../public/assets/images/stable-icon.png';
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Login() {
+export default function CadastroFonte() {
     const [login, setLogin] = useState("");
     const [fonte, setFonte] = useState("");
     const router = useRouter();

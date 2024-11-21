@@ -24,7 +24,7 @@ export const LateralNav = () => {
                 <nav className='flex flex-col items-center h-screen justify-between py-[50px] border-r-1 border-solid border-[#E9E9E9]'>
                   <Link href="/"><Image src={logo} alt="Logo" className='w-[190px]'/></Link> 
                    <Link href="/inserir-fonte" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={addFonte} alt='Adicionar fonte' className='w-[40px] filter invert'/></Link>
-                   <Link href="/" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={addConsu} alt='Adicionar consumidor'className='w-[40px] filter invert'/></Link>
+                   <Link href="/inserir-consumidor" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={addConsu} alt='Adicionar consumidor'className='w-[40px] filter invert'/></Link>
                    <Link href="/" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={somaEner} alt='Adicionar fonte'className='w-[40px] filter invert'/></Link>
                    <Link href="/" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={menorConsu} alt='Adicionar fonte'className='w-[40px] filter invert'/></Link>
                    <Link href="/" className='p-3 bg-gradient-to-r from-green-500 to-green-700 rounded-full'><Image src={deleteFont} alt='Adicionar fonte'className='w-[40px] filter invert'/></Link>
