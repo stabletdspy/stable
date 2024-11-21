@@ -22,8 +22,8 @@ export const Header = () => {
                 <Link href="/">
                     <Image
                         src={logoHeader} 
-                        width={130}
-                        height={19}
+                        width={230}
+                        height={89}
                         alt="Logo AutoCare"
                     />
                 </Link>

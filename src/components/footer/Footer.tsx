@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-import logoFooter from '../../../public/assets/images/stable-icon.png';
+import logoFooter from '../../../public/assets/images/stable-footer.png';
 import githubIcon from '../../../public/assets/svg/github-icon-footer.svg';
 
 

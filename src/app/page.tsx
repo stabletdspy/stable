@@ -3,6 +3,9 @@ import Image from 'next/image';
 import { Header } from '@/components/header/Header';
 
 import logoHeader from '../../public/assets/images/stable-icon.png';
+import Consumidores from '../../public/assets/images/consumidores.png';
+import Balanca from '../../public/assets/images/balancas.png';
+import Energia from '../../public/assets/images//sustainable-energy.png';
 import { Inter, Roboto } from "next/font/google";
 import { Footer } from '@/components/footer/Footer';
 import { CardServico } from '@/components/CardServico/CardServico';
@@ -17,12 +20,12 @@ export default function PageHome() {
       <main className="container grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="self-center order-2 md:order-1 texto_main">
           <h1 className={`${inter.className} text-5xl sm:text-6xl font-semibold mb-8`}>
-            Uma nova maneira de <span className="text-corP1">diagnosticar</span>
+            Uma nova maneira de economizar <span className="text-corP1">energia</span>
           </h1>
           <p className="text mb-5">
-            Tenha o diagnóstico do problema do seu veículo de uma nova maneira.
+           Crie aqui sua conta para gerenciar suas fontes de energia
           </p>
-          <a className="botao">UTILIZE O SERVIÇO</a>
+          <a className="botao">FAZER LOGIN</a>
         </div>
         <div className="order-1 md:order-2">
         <div
@@ -36,27 +39,27 @@ export default function PageHome() {
         <div className="container flex flex-col gap-16 justify-center">
 
           <div className="flex flex-col">
-            <h2 className={`${inter.className} text-4xl sm:text-5xl font-semibold mb-5 text-center`}>Por que utilizar o <span className="text-corP1">serviço AutoCare</span>?</h2>
-            <p className={`${roboto.className} text text-center w-fullmd:w-1/2 mx-auto`}>Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos.</p>
+            <h2 className={`${inter.className} text-4xl sm:text-5xl font-semibold mb-5 text-center`}>Por que utilizar o <span className="text-corP1">serviço STABLE</span>?</h2>
+            <p className={`${roboto.className} text text-center w-fullmd:w-1/2 mx-auto`}>Nossa tecnologia inovadora simplifica o processo de realocação e melhora a eficiência energética de suas fontes de enêrgia.</p>
           </div>     
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <CardServico
-              imageSrc={logoHeader}
-              imageAlt="Diagnóstico"
-              title="Diagnóstico preciso e 100%  online"
+              imageSrc={Balanca}
+              imageAlt="Realocação"
+              title="Realocação precisa e 100%  online"
               description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
             />
             <CardServico
-              imageSrc={logoHeader}
-              imageAlt="Orçamento"
-              title="Saiba todos os detalhes do orçamento"
-              description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
+              imageSrc={Energia}
+              imageAlt="energia"
+              title="Facíl de inserir novas energias"
+              description="Basta apenas clicar em adicionar nova fonte para associala a sua empresa!"
             />
             <CardServico
-              imageSrc={logoHeader}
-              imageAlt="Conserto"
-              title="Acompanhe em tempo real o status do conserto"
-              description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
+              imageSrc={Consumidores}
+              imageAlt="consumidores"
+              title="Adicione novos consumidores"
+              description="Adicione novos consumidores a sua empresa de acordo com a região deles e a fonte que será utilizada inicialmente"
             />
           </div>
           <a className="botao text-center">UTILIZE O SERVIÇO</a>
@@ -64,23 +67,7 @@ export default function PageHome() {
         </div>
       </section>
 
-      <section id="como-funciona" aria-label="Como funciona" className='container grid grid-cols-1 auto-rows-min gap-[60px] md:grid-cols-2 md:gap-10 md:place-items-start'>
-        <div className='self-start md:col-span-1'>
-          <h2 className={`${inter.className} text-4xl sm:text-5xl font-semibold mb-5 md:row-span-1`}>Resolva os seus problemas com apenas <span className='text-corP1'>4 passos</span> simples</h2>
-        </div>
-        
-        <div className="col-start-1 row-start-3 md:col-start-1 md:row-start-2">
-          <Image
-            src={logoHeader}
-            alt="Como funciona"
-            className='rounded-[20px]'
-          />
-        </div>
-
-        </section>
-
-      
-
+    
      
       <Footer/>
     </>
