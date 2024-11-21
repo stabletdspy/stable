@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -49,7 +50,7 @@ export default function Cadastro() {
             if (response.status === 201) {
                 sessionStorage.setItem('clienteLogin', login);
                 alert("Cadastro realizado com sucesso!");
-                router.push(`/cadastroCarro?clienteLogin=${login}`); 
+                router.push(`/?clienteLogin=${login}`); 
             }
             if (response.status === 400){
                 alert("Erro ao buscar login do cliente")
@@ -62,14 +63,9 @@ export default function Cadastro() {
     return (
         <>
             <section className='container formContainer'>
-                <div className='mb-10 flex justify-between items-center border-1 border-solid border-corP1 rounded-full'>
+               
                    
-                    <p
-                        className='bg-corP1 text-branco py-5 px-8 rounded-full'
-                    >
-                        Cadastro empresa
-                    </p>
-                </div>
+                  
 
                 <Link href="/"><Image src={logoHeader} alt="" className='logoForm' /></Link>
                 <h3 className={`${inter.className} titleForm`}>Cadastro</h3>
@@ -91,7 +87,16 @@ export default function Cadastro() {
                         maxLength={18}
                         name="txtCnpj"
                         className="inputsForm"
-                        value={cnpj} onChange={(e) => setCnpj(e.target.value)}
+                        value={cnpj} 
+                        onChange={(e) => {
+                            let formattedCnpj = e.target.value.replace(/\D/g, "");  
+                            formattedCnpj = formattedCnpj.replace(/(\d{2})(\d)/, "$1.$2");
+                            formattedCnpj = formattedCnpj.replace(/(\d{3})(\d)/, "$1.$2"); 
+                            formattedCnpj = formattedCnpj.replace(/(\d{3})(\d{4})/, "$1/$2"); 
+                            formattedCnpj = formattedCnpj.replace(/(\d{4})(\d{2})$/, "$1-$2"); 
+                        
+                            setCnpj(formattedCnpj); 
+                        }}
                         />
                     </div>
                     <div className='mb-5'>
