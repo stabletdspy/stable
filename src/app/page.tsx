@@ -2,16 +2,10 @@ import Image from 'next/image';
 
 import { Header } from '@/components/header/Header';
 
-import diagnosticoIcon from "../../public/assets/svg/diagnostico-icon.svg";
-import orcamentoIcon from "../../public/assets/svg/carteira-icon.svg";
-import consertoIcon from "../../public/assets/svg/conserto-icon.svg";
-import comoFunciona from '../../public/assets/images/imagem-diferenciais.jpg'
-import profileRodrigo from '../../public/assets/images/avaliacao-1.jpg'
-import profileJoao from '../../public/assets/images/avaliacao-2.jpg'
-import profileRegina from '../../public/assets/images/avaliacao-3.jpg'
-
+import logoHeader from '../../public/assets/images/stable-icon.png';
 import { Inter, Roboto } from "next/font/google";
 import { Footer } from '@/components/footer/Footer';
+import { CardServico } from '@/components/CardServico/CardServico';
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
@@ -47,19 +41,19 @@ export default function PageHome() {
           </div>     
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <CardServico
-              imageSrc={diagnosticoIcon}
+              imageSrc={logoHeader}
               imageAlt="Diagnóstico"
               title="Diagnóstico preciso e 100%  online"
               description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
             />
             <CardServico
-              imageSrc={orcamentoIcon}
+              imageSrc={logoHeader}
               imageAlt="Orçamento"
               title="Saiba todos os detalhes do orçamento"
               description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
             />
             <CardServico
-              imageSrc={consertoIcon}
+              imageSrc={logoHeader}
               imageAlt="Conserto"
               title="Acompanhe em tempo real o status do conserto"
               description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
@@ -77,58 +71,17 @@ export default function PageHome() {
         
         <div className="col-start-1 row-start-3 md:col-start-1 md:row-start-2">
           <Image
-            src={comoFunciona}
+            src={logoHeader}
             alt="Como funciona"
             className='rounded-[20px]'
           />
         </div>
 
-        <div className="col-start-1 row-start-2 md:row-span-2 md:col-start-2 md:row-start-1">
-          <div className="flex flex-col space-y-10">
-            <Passo
-              decorativoClass={true}
-              titulo="Conecte o App ao Bluetooth de seu veículo"
-              texto="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
-            />
-            <Passo
-              decorativoClass={true}
-              titulo="Receba o orçamento detalhado e avalie se cabe no seu bolso"
-              texto="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
-            />
-            <Passo
-              decorativoClass={true}
-              titulo="Agende com uma oficina próxima de sua escolha"
-              texto="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
-            />
-            <Passo
-              decorativoClass={false}
-              titulo="Seja atualizado pela oficina sobre quando seu carro ficará disponível para retirada"
-              texto="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section aria-label="Avaliações" className='container'>
-        <h2 className={`${inter.className} text-center text-4xl sm:text-5xl font-semibold mb-20`}>Conheça a <span className='text-corP1'>opinião</span> de quem utilizou <br />nosso <span>serviço</span></h2>
-        <ul className='flex gap-10 px-5 pb-5 overflow-x-auto'>
-          <Avaliacao
-            texto='Meu carro foi consertado rapidamente e o preço foi justo. Recomendo sem hesitar!'  
-            image={profileRodrigo}
-            nome='Rodrigo Freitas'
-          />
-          <Avaliacao
-            texto='Levei meu carro com um problema complicado e eles resolveram rapidamente. Além disso, me mantiveram informado durante todo o processo. '  
-            image={profileJoao}
-            nome='João Pedro'
-          />
-          <Avaliacao
-            texto='Eles realmente se importam com seus clientes e fazem de tudo para garantir que você saia satisfeito. Não troco a Innova Auto Care por nada!'  
-            image={profileRegina}
-            nome='Regina Fonseca'
-          />
-        </ul>
-      </section>
+      
+
+     
       <Footer/>
     </>
   );

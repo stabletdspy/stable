@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-import logo from '../../../public/assets/svg/logo.svg';
-
+import logoHeader from '../../../public/assets/images/stable-icon.png';
 import { Inter } from "next/font/google";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -72,7 +71,7 @@ export default function Cadastro() {
                     </p>
                 </div>
 
-                <Link href="/"><Image src={logo} alt="" className='logoForm' /></Link>
+                <Link href="/"><Image src={logoHeader} alt="" className='logoForm' /></Link>
                 <h3 className={`${inter.className} titleForm`}>Cadastro</h3>
                 <p className={`${inter.className} subtitleForm`}>Complete com seus dados para criar sua conta</p>
 

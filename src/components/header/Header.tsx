@@ -2,10 +2,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from 'next/image';
-
-import logoHeader from '../../logo.svg';
+import logoHeader from '../../../public/assets/images/stable-icon.png';
 import { Roboto } from "next/font/google";
-import { MdMenu } from "react-icons/md";
+
 import { usePathname } from "next/navigation";
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -30,23 +29,14 @@ export const Header = () => {
                 </Link>
 
                 <button className="md:hidden" onClick={() => setDrawer(true)}>
-                    <MdMenu className="size-8 text-corP1"/>
+                    ☰
                 </button>
 
                 <ul 
                     className="hidden md:flex gap-10 text-base" 
                     tabIndex={drawer ? -1 : undefined}
                 >
-                    <li>
-                        <a href="/#sobre-serviço" className={roboto.className}>
-                            DIFERENCIAIS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/#como-funciona" className={roboto.className}>
-                            COMO FUNCIONA
-                        </a>
-                    </li>
+                  
                     <li>
                         <Link href="/integrantes" className={roboto.className}>
                             QUEM SOMOS NÓS
@@ -57,7 +47,7 @@ export const Header = () => {
                             href="/login"
                             className={`${roboto.className} text-corP1 p-2 rounded-lg border border-corP1 hover:bg-corP1 hover:text-branco`}
                         >
-                            ÁREA DO CLIENTE
+                            ÁREA DA EMPRESA
                         </Link>
                     </li>
                 </ul>
@@ -69,16 +59,7 @@ export const Header = () => {
                     tabIndex={drawer ? 0 : -1}
                 >
                     <ul className="ml-auto flex gap-10 text-sm flex-col items-center justify-around bg-branco px-4 w-60 h-full" onClick={e => e.stopPropagation()}>
-                        <li>
-                            <a href="/#sobre-serviço" className={roboto.className}>
-                                DIFERENCIAIS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/#como-funciona" className={roboto.className}>
-                                COMO FUNCIONA
-                            </a>
-                        </li>
+                    
                         <li>
                             <Link href="/integrantes" className={roboto.className}>
                                 QUEM SOMOS NÓS
@@ -89,7 +70,7 @@ export const Header = () => {
                                 href="/login"
                                 className={`${roboto.className} text-corP1 p-2 rounded-lg border-[1px] border-corP1 hover:bg-corP1 hover:text-branco`}
                             >
-                                ÁREA DO CLIENTE
+                                ÁREA DA EMPRESA
                             </Link>
                         </li>
                     </ul>
