@@ -21,7 +21,7 @@ export default function Dashboard() {
         if (login) {
             const fetchConsumoEnergia = async () => {
                 try {
-                    setLoading(true);
+                    setLoading(true);                                                  /*POR ENQUANTO DEIXAR NA REGIÃO SUDESTE, funciona as outras mas para melhor visualição utilizala junto do login: enel.sp senha: 123*/
                     const response = await axios.put(`http://localhost:8080/fonte/Sudeste/${login}`);
                     if (response.status === 204) {
                         
