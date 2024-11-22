@@ -26,7 +26,7 @@ export default function Integrantes() {
                         rm='RM559196'
                         turma='Turma TDSPY'
                         linkGithub='https://github.com/Brendon-Brasil'
-                        linkLinkedin='https://www.linkedin.com/in/brendon-119970236/'
+                        linkLinkedin='https://www.linkedin.com/in/brendon-brasil-941621267/'
                     />
                 </li>
                 <li>
