@@ -8,7 +8,6 @@ import axios from 'axios';
 
 import logo from '../../../public/assets/images/stable-icon.png';
 
-import LoginButton from "@/components/loginButton/LoginButton";
 
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -42,7 +41,7 @@ export default function Login() {
     return (
         <>
             <section className='container formContainer'>
-                <Link href='/'><Image src={logo} alt="Logo Autocare" className='logoForm'/></Link>
+                <Link href='/'><Image src={logo} alt="Logo" className='logoForm'/></Link>
                 <h3 className={`${inter.className} titleForm`}>Bem-vindo de volta!</h3>
                 <p className={`${inter.className} subtitleForm`}>Por favor, insira seus dados de login</p>
               
