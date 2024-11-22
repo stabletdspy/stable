@@ -47,7 +47,7 @@ export default function PageHome() {
               imageSrc={Balanca}
               imageAlt="Realocação"
               title="Realocação precisa e 100%  online"
-              description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência nos centros automotivos."
+              description="Nossa tecnologia inovadora simplifica processos e melhora a eficiência das fontes de energia."
             />
             <CardServico
               imageSrc={Energia}
