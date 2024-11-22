@@ -1,6 +1,7 @@
 # **Stable**
 
-
+# *Participantes:*
+# *Brendon de Paula Brasil - RM559196*
 # *Sistema de Monitoramento e Redistribuição de Energia*
 
 ## **Descrição**
