@@ -1,5 +1,9 @@
 # **Stable**
+## Integrantes
 
+### Vinicius Leandro RM554728
+### Brendon de Paula RM559196
+### David Gomes RM556607
 ## Link para o site upado no vercel: https://stable-peach.vercel.app/
 ## OBS: Para a aplicação funcionar, extraia a pasta compactada contendo o projeto java e rode o projeto
 
@@ -15,6 +19,5 @@ O projeto tem como objetivo otimizar o uso de fontes de energia renovável, redu
 ## **Objetivos do Projeto**
 - Monitorar o consumo energético em tempo real de fontes renováveis.
 - Redistribuir automaticamente a carga de energia para equilibrar as fontes e evitar sobrecargas.
-- Notificar os operadores sobre possíveis falhas ou consumo excessivo.
-- Fomentar o uso de fontes de energia sustentáveis, como a energia eólica e hidráulica.
+
 
