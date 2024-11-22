@@ -19,6 +19,5 @@ O projeto tem como objetivo otimizar o uso de fontes de energia renovável, redu
 ## **Objetivos do Projeto**
 - Monitorar o consumo energético em tempo real de fontes renováveis.
 - Redistribuir automaticamente a carga de energia para equilibrar as fontes e evitar sobrecargas.
-- Notificar os operadores sobre possíveis falhas ou consumo excessivo.
-- Fomentar o uso de fontes de energia sustentáveis, como a energia eólica e hidráulica.
+
 
