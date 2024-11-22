@@ -33,7 +33,7 @@ export default function Integrantes() {
                     <CardIntegrante
                         foto={daviGithub}
                         nome='David Rapeckman'
-                        rm='RM6607'
+                        rm='RM556607'
                         turma='Turma TDSPY'
                         linkGithub='https://github.com/David-Rapeckman'
                         linkLinkedin='https://br.linkedin.com/in/davidrapeckman'
