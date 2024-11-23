@@ -20,7 +20,7 @@ O projeto tem como objetivo otimizar o uso de fontes de energia renovável, redu
 
 No Front-end va ao terminal de comando ultilize o **npm i**
 
-No java, apenas rode o comando pela classe main
+No java, apenas rode o projeto pela classe main
 
 
 ---
