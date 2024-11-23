@@ -5,7 +5,7 @@
 ### Brendon de Paula RM559196
 ### David Gomes RM556607
 ## Link para o site upado no vercel: https://stable-peach.vercel.app/
-## OBS1: Para a aplicação funcionar, extraia a pasta compactada contendo o projeto java e rode o projeto
+## OBS1: Para a aplicação funcionar, extraia a pasta compactada contendo o projeto java e a do Front e rode o projeto
 ## OBS2: Graças a limitação imposta no banco de dados da fiap,poode ser que a função de cadastrar empresa não esteja cadastrando(caso seja mandando pelo front, pois diz que o meu usuario estourou o limite) fazendo com que o projeto java pare de executar, basta executalo denovo 
 ## OBS3: Aqui estão os dados de login da empresa que nós inserimos mais dados e que é possivel testar todas as funcionalidades: LOGIN: enel.sp SENHA: 123
 # *Sistema de Monitoramento e Redistribuição de Energia*
@@ -18,7 +18,10 @@ O projeto tem como objetivo otimizar o uso de fontes de energia renovável, redu
 ---
 ## **Para rodar o Pojeto** 
 
-No terminal de comando ultilize o **npm i**
+No Front-end va ao terminal de comando ultilize o **npm i**
+
+No java, apenas rode o comando pela classe main
+
 
 ---
 
