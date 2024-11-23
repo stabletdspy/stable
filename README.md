@@ -16,9 +16,9 @@ O **Sistema de Monitoramento e Redistribuição de Energia** é uma solução in
 O projeto tem como objetivo otimizar o uso de fontes de energia renovável, reduzir desperdícios e melhorar a performance dos sistemas de geração energética.
 
 ---
-## **Para rodar o Pojeto 
+## **Para rodar o Pojeto** 
 
-No terminal de comando ultilize o **npm i
+No terminal de comando ultilize o **npm i**
 
 ---
 
